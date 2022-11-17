@@ -19,11 +19,13 @@ This file is organized as follows:
 ```-conda create- ---name isce2_env```
 3. Activate the ```icse2_env``` using ```conda activate isce2_env```
 4. Install isce2 package using ``` conda install -c conda-forge isce2```
-5. Add isce2 to path variable using ```export PATH=$PATH:/path_to_isce2```
+5. Update isce using ```conda update isce2```
+6. Add isce2 to path variable using ```export PATH=$PATH:/path_to_isce2```
 
 ## 3. MATLAB Installation
-1. Test
-2. test
+1. Download the installer from the MATLAB website. Login to the mathworks account to do so.
+2. Unzip the file and run the install file using ./install
+3. Follow the steps in the installer
 
 ## 4. SNAP Software Installation
 1. Get the installation files from ESA SNAP Download page: https://step.esa.int/main/download/snap-download/
