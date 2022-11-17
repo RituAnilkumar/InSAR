@@ -8,5 +8,5 @@ The steps associated with Sentinel processing are:
 6. Enhanced spectral diversity: This improves the coregistration. RADAR>Coregistration>S1 TOPS Coregistration>Enhanced spectral diversity
 7. Interferogram generation and coherance estimation: Ensure that elevation and lat lon checkbox is also selected when running as its required in the export to stamps. RADAR>Interferometric>Products>Interferogram Formation.
 8. Debursting: Required to be performed for the interfeormgram as well as the product after enhanced spectral diversity. RADAR>S1 TOPS> S1 Tops Deburst.
-9. Exporting for applying to StaMPS: The image after the spectral diverrsity and the interferogram need to be specified. The final exported folder contains a number of sub folders each specifying the interferogram, image files, DEM data, lat, lon and elevation etc.
+9. Exporting for applying to StaMPS: The image after the spectral diverrsity and the interferogram need to be specified. The final exported folder contains a number of sub folders each specifying the interferogram, image files, DEM data, lat, lon and elevation etc. RADAR>Interferometric>PSI/SBAS>StaMPS Export
 10. Rename the folder containing the STaMPS ready export to INSAR_yyyymmdd where the date corresponds to that of the master image.
