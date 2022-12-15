@@ -22,6 +22,8 @@ This file is organized as follows:
 5. Update isce using ```conda update isce2```
 6. Add isce2 to path variable using ```export PATH=$PATH:/path_to_isce2```
 
+Note: There might be a requirement to install opencv and gdal and shapely separately. Use as conda-forge for this.
+
 ## 3. MATLAB Installation
 1. Download the installer from the MATLAB website. Login to the mathworks account to do so.
 2. Unzip the file and run the install file using ./install
