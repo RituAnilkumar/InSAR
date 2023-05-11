@@ -1,3 +1,13 @@
 # List of Steps to Generate a Geocoded Unwrapped Interferogram using TopsStack processor on ISCE2
 
 Before starting, ensure isce is installed. In case the regular installation process does not work, try using the uploaded yml file (isce2_env.yml) and install using conda: ```conda env create --file isce2_env.yml```
+
+The SLC images for the location are to be downloaded and saved into a folder within the working directory called SLC. The DEM can be downloaded and placed into a directory called DEM
+
+Now we can start with the Interferogram generation as follows:
+1. Activate the environment using ```conda activate isce_env```
+2. Add the path to the TopsStack processor using ```export PATH=$PATH:/home/ritu/miniconda3/envs/isce_env/share/isce2/topsStack/:/home/ritu/miniconda3/envs/isce_env/share/isce2/prepStackToStaMPS/bin/:/home/ritu/miniconda3/envs/isce_env/lib/python3.9/site-packages/isce/applications:/home/ritu/miniconda3/envs/isce_env/lib/python3.9/site-packages/isce/```.Note, you will need to change the path to reflect the path to topsStack as per your file directories. Also, here I've set one path to StaMPS which can be ignored for this specific example.
+3. Enter teh DEM directory using cd
+4. Process the DEMs into the appropriate format using dem.py  as follows: ```dem.py -a stitch -b 28 29 93 95 -r -s 1 -c -k```. The bounding boxes are in the format SNWE. There are no decimals here, but make sure you choose a all lat-lons covering your entire study area.
+5. Return to the parent directory using ```cd ..```
+6. Optional: Ionospheric correction. Apply ```s1_select_ion.py -dir /home/ritu/Desktop/SnowmeltTDP/insarTrial2/SLC/ -sn 28.21/29``` 
