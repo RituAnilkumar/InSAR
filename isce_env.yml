@@ -1,0 +1,16 @@
+name: isce_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - curl
+  - dask-core
+  - gdal
+  - isce2
+  - libgcc-ng
+  - libgdal
+  - libgfortran-ng
+  - libgfortran5
+  - numpy
+  - opencv
+  - pip
